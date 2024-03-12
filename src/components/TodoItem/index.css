@@ -17,9 +17,6 @@
   justify-content: space-between;
   width: 80px;
 }
-.counter {
-  font-size:12px;
-}
 button {
   background-color: transparent;
   border: none;
