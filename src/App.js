@@ -14,6 +14,7 @@ class App extends Component {
     return {
       title: todoInputItem.substring(0, todoInputItem.length - 1),
       id: uuidv4(),
+      counter : 0,
     };
   };
 
@@ -67,6 +68,7 @@ class App extends Component {
       let updatedTodos = [...todosList];
       const editedTodoIndex = todosList.findIndex((item) => item.id === key);
       updatedTodos[editedTodoIndex].title = editedTodo;
+      updatedTodos[editedTodoIndex].counter += 1;
       this.setState({
         todosList: updatedTodos,
       });
